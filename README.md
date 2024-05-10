@@ -1,1 +1,1 @@
-# first-template
+# Image Carousel
