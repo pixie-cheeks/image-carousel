@@ -35,15 +35,15 @@ button {
 }
 
 .page__heading {
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+.page__img-carousel {
+  align-self: start;
 }
 
 .img-carousel {
-  align-self: start;
   display: flex;
-  height: min(50%, 50rem);
-  width: min(80%, 160ch);
-  justify-content: space-between;
   box-shadow: 1px 1px 10px 0 rgb(146, 142, 142);
   border-radius: 15px;
   overflow: hidden;
@@ -52,10 +52,10 @@ button {
 .img-carousel__arrow {
   background-color: hsl(0, 11%, 64%);
   fill: white;
-  width: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 6ch;
 }
 
 .img-carousel__arrow:hover {
@@ -67,6 +67,26 @@ button {
   fill: hsl(0, 0%, 90%);
 }
 
-.img-carousel__content {
-  flex: 1;
+.img-carousel__frame {
+  width: 600px;
+  height: 500px;
+  background-color: hsl(0, 11%, 64%);
+  position: relative;
+  z-index: -2;
+}
+
+.img-carousel__reel {
+  position: absolute;
+  top: 0;
+  left: 0; /* formula --> 600(1 - x)px*/
+  z-index: -1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img-carousel__slide {
+  border-radius: 10px;
+  height: auto;
+  width: 600px;
 }
