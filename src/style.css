@@ -78,7 +78,7 @@ button {
 .img-carousel__reel {
   position: absolute;
   top: 0;
-  left: 0; /* formula --> 600(1 - x)px*/
+  left: 0;
   z-index: -1;
   height: 100%;
   display: flex;
