@@ -1,5 +1,4 @@
-import 'normalize.css';
-import './style.css';
+import './index.css';
 
 class ImageCarousel {
   constructor(previousSlideElem, nextSlideElem, reelElem, slideWidth) {
