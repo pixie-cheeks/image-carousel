@@ -3,7 +3,6 @@
   grid-template-columns: repeat(3, auto);
   box-shadow: 1px 1px 10px 0 rgb(146, 142, 142);
   border-radius: 15px;
-  overflow: hidden;
   background-color: hsl(0, 11%, 64%);
   position: relative;
   z-index: 0;
@@ -30,12 +29,12 @@
 .img-carousel__frame {
   width: 600px;
   height: 450px;
+  overflow: hidden;
   position: relative;
 }
 
 .img-carousel__reel {
   position: absolute;
-  top: 0;
   left: 0;
   height: 100%;
   z-index: -1;
@@ -66,8 +65,13 @@
   border-radius: 50%;
   box-shadow: 0 0 3px 1px gray;
   padding: 0.3rem;
+  cursor: pointer;
 }
 
 .navigation__dot--active {
   background-color: burlywood;
+}
+
+svg {
+  pointer-events: none;
 }
